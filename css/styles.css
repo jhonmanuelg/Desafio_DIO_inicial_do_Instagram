@@ -1,0 +1,190 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(241, 243, 245);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+    
+}
+
+.instagram-phone{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+  
+}
+
+.instagram-phone img{
+    width: 20rem;
+    
+}
+/* instagram-continue e group */
+.instagram-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+/* primeiro gruop */
+
+.gruop{
+    background-color: white;
+    width: 80%;
+    padding: 1.3rem;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.gruop1{
+    margin-bottom: 30px;
+    height: 50vh;
+}
+
+.gruop:nth-child(1){
+    min-height: 19rem;
+}
+
+.logo-instagram{
+    width: 10rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    height: 6rem;
+}
+
+/* instagram-login */
+.instagram-login{
+    background-color: #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+/* not-account */
+
+.not-account{
+    color: rgb(124, 121, 121);
+}
+
+.link-blue{
+    color: #0095f6;
+    cursor: pointer;
+}
+
+/* get-the-app */
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.dolwnlood{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.rem;
+}
+
+/* app-dolwnlood */
+.app-dolwnlood{
+    margin: 9px;
+    width:22%;
+    height: 2rem;
+    background-size: cover;
+}
+
+.app-dolwnlood:nth-child(1){   
+    background-image: url('/img/apple.png');
+}
+.app-dolwnlood:nth-child(2){   
+    background-image: url('/img/play store android.png');
+}
+
+/* medias queries*/
+@media (max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 770px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .app-dolwnlood{
+        width: 28%;
+    }
+}
+
+@media (max-width: 650px){
+    body{
+        background-color: white;
+    }
+
+
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+    }
+    
+    .instagram-continue{
+        width: 100%;
+    }
+
+    .gruop{
+        border: none;
+    }
+    .app-dolwnlood{
+        width: 25%;
+    }
+    
+
+}
